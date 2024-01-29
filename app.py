@@ -46,10 +46,17 @@ def main():
     page_bg_img = '''
     <style>
     body {
-        background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-        background-size: cover;
-        }
+    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-size: cover;
+    }
     footer {visibility: hidden;}
+    @media only screen and (max-width: 600px) {
+    /* Atur gaya tata letak untuk layar seluler */
+    body {
+    background-image: none;  /* Hapus gambar latar belakang untuk layar seluler */
+    background-color: #ffffff;  /* Ganti latar belakang dengan warna putih */ 
+    }
+    }
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
