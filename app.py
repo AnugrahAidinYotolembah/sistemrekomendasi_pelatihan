@@ -234,7 +234,7 @@ def main():
 
         # Menampilkan peta
          # Menampilkan peta dengan responsif
-        folium_static(m, width=st._container_width, height=500)
+        folium_static(m, width=940, height=500)
 
 
         
