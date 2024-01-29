@@ -225,7 +225,10 @@ def main():
         # Menambahkan marker pada peta (contoh)
         folium.Marker([-6.2088, 106.8456], popup='Jakarta').add_to(m)
         folium.Marker([-7.2504, 112.7688], popup='Surabaya').add_to(m)
-        folium.Marker([ -6.595038, 106.816635], popup='Bogor').add_to(m)
+        folium.Marker([-6.595038, 106.816635], popup='Bogor').add_to(m)
+        folium.Marker([-6.966667, 110.416664], popup='Semarang').add_to(m)
+        folium.Marker([-6.347891, 106.741158], popup='Tangerang Selatan').add_to(m)
+        folium.Marker([1.474830, 124.842079], popup='Manado').add_to(m)
 
         
 
