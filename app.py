@@ -243,6 +243,13 @@ def main():
          # Menampilkan peta dengan responsif
         folium_static(m, width=940, height=500)
 
+        make_map_responsive= """
+        <style>
+        [title~="st.iframe"] { width: 100%}
+        </style>
+        """
+        st.markdown(make_map_responsive, unsafe_allow_html=True)
+
 
         
 
