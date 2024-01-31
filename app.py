@@ -63,12 +63,27 @@ def main():
 
 
     # Menambahkan sidebar dengan foto, nama, dan nim
-    st.sidebar.title("Profile")
-    st.sidebar.image("image/Anugrah Aidin Yotolembah_F55120093.jpg", use_column_width=True)
-    st.sidebar.title("Anugrah Aidin Yotolembah")
-    st.sidebar.title("F55120093")
-    st.sidebar.title("S1 Teknik Informatika")
-    st.sidebar.title("Universitas Tadulako")
+    def home_page():
+            st.title("Home")
+            st.title("Selamat Datang Kembali")
+            
+        
+    def profile_page():
+        st.title("Profile")
+        st.image("image/Anugrah Aidin Yotolembah_F55120093.jpg", use_column_width=True)
+        st.title("Anugrah Aidin Yotolembah")
+        st.title("F55120093")
+        st.title("S1 Teknik Informatika")
+        st.title("Universitas Tadulako")
+
+    with st.sidebar:
+        selected = st.selectbox("Main Menu", ["Home", 'Profile'], index=1) 
+        
+
+        if selected == "Home":
+            home_page()
+        elif selected == "Profile":
+            profile_page()
 
     # Judul halaman dengan warna dan style
     st.markdown(
