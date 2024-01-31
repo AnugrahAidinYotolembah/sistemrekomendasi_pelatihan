@@ -90,6 +90,32 @@ def main():
     st.image(image_path3, use_column_width=True)
     image_path4 = "image/gambar_4.png"  # Ganti dengan path gambar yang sesuai
     st.image(image_path4, use_column_width=True)
+   
+    # Visualisasi peta Indonesia dengan folium
+    st.markdown("---")
+    st.markdown("<h2 style='text-align: center; color: #FFFFFF;'>daerah yang dikunjungi</h2>", unsafe_allow_html=True)
+        
+    # Contoh peta statis menggunakan folium
+    m = folium.Map(location=[-2.5489, 118.0149], zoom_start=5)  # Koordinat tengah Indonesia
+
+    # Menambahkan marker pada peta (contoh)
+    folium.Marker([-6.2088, 106.8456], popup='Jakarta').add_to(m)
+    folium.Marker([-7.2504, 112.7688], popup='Surabaya').add_to(m)
+    folium.Marker([-6.595038, 106.816635], popup='Bogor').add_to(m)
+    folium.Marker([-6.966667, 110.416664], popup='Semarang').add_to(m)
+    folium.Marker([-6.347891, 106.741158], popup='Tangerang Selatan').add_to(m)
+    folium.Marker([1.474830, 124.842079], popup='Manado').add_to(m)
+
+    # Menampilkan peta
+    # Menampilkan peta dengan responsif
+    folium_static(m, width=940, height=500)
+
+    make_map_responsive= """
+        <style>
+        [title~="st.iframe"] { width: 100%}
+        </style>
+        """
+    st.markdown(make_map_responsive, unsafe_allow_html=True)
     
     st.markdown(
         """
@@ -221,34 +247,7 @@ def main():
         # Menampilkan rekomendasi dalam bentuk tabel
         st.table(pd.DataFrame(recommendations))
 
-        # Visualisasi peta Indonesia dengan folium
-        st.markdown("---")
-        st.markdown("<h2 style='text-align: center; color: #FFFFFF;'>daerah yang dikunjungi</h2>", unsafe_allow_html=True)
         
-
-        # Contoh peta statis menggunakan folium
-        m = folium.Map(location=[-2.5489, 118.0149], zoom_start=5)  # Koordinat tengah Indonesia
-
-        # Menambahkan marker pada peta (contoh)
-        folium.Marker([-6.2088, 106.8456], popup='Jakarta').add_to(m)
-        folium.Marker([-7.2504, 112.7688], popup='Surabaya').add_to(m)
-        folium.Marker([-6.595038, 106.816635], popup='Bogor').add_to(m)
-        folium.Marker([-6.966667, 110.416664], popup='Semarang').add_to(m)
-        folium.Marker([-6.347891, 106.741158], popup='Tangerang Selatan').add_to(m)
-        folium.Marker([1.474830, 124.842079], popup='Manado').add_to(m)
-
-        
-
-        # Menampilkan peta
-         # Menampilkan peta dengan responsif
-        folium_static(m, width=940, height=500)
-
-        make_map_responsive= """
-        <style>
-        [title~="st.iframe"] { width: 100%}
-        </style>
-        """
-        st.markdown(make_map_responsive, unsafe_allow_html=True)
 
 
         
