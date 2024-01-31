@@ -105,6 +105,8 @@ def main():
     folium.Marker([-6.966667, 110.416664], popup='Semarang').add_to(m)
     folium.Marker([-6.347891, 106.741158], popup='Tangerang Selatan').add_to(m)
     folium.Marker([1.474830, 124.842079], popup='Manado').add_to(m)
+    folium.Marker([-6.905977, 107.613144], popup='Bandung').add_to(m)
+    folium.Marker([-1.609972, 103.607254], popup='Bandung').add_to(m)
 
     # Menampilkan peta
     # Menampilkan peta dengan responsif
