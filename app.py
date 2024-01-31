@@ -93,7 +93,7 @@ def main():
    
     # Visualisasi peta Indonesia dengan folium
     st.markdown("---")
-    st.markdown("<h2 style='text-align: center; color: #FFFFFF;'>daerah yang telah dikunjungi</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center; color: #FFFFFF;'>daerah pelatihan yang telah dikunjungi</h2>", unsafe_allow_html=True)
         
     # Contoh peta statis menggunakan folium
     m = folium.Map(location=[-2.5489, 118.0149], zoom_start=5)  # Koordinat tengah Indonesia
