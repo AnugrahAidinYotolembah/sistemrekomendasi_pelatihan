@@ -64,8 +64,8 @@ def main():
 
     # Menambahkan sidebar dengan foto, nama, dan nim
     def home_page():
-            st.title("Home")
-            st.title("Selamat Datang Kembali")
+        st.title("Home")
+        st.title("Selamat Datang Kembali")
             
         
     def profile_page():
