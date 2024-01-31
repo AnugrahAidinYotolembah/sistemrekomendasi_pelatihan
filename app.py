@@ -77,7 +77,7 @@ def main():
         st.title("Universitas Tadulako")
 
     with st.sidebar:
-        selected = st.selectbox("main menu", ["Home", 'Profile'], index=0) 
+        selected = st.selectbox(" ", ["Home", 'Profile'], index=0) 
         
 
         if selected == "Home":
