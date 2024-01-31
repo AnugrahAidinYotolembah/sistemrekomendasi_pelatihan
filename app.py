@@ -109,6 +109,7 @@ def main():
     folium.Marker([-1.609972, 103.607254], popup='Jambi').add_to(m)
     folium.Marker([-7.797068, 110.370529], popup='Yogyakarta').add_to(m)
     folium.Marker([-6.966667, 110.416664], popup='Semarang').add_to(m)
+    folium.Marker([-6.178306, 106.631889], popup='Tangerang').add_to(m)
     
 
     # Menampilkan peta
