@@ -41,7 +41,7 @@ def need_recommendation(need, data, cosine_sim):
 
 # Fungsi utama
 def main():
-    st.set_page_config(page_title="Rekomendasi Produk Pelatihan", page_icon="image/snake.png", layout="wide", initial_sidebar_state="expanded", menu_items=None)
+    st.set_page_config(page_title="Rekomendasi Produk Pelatihan", page_icon="image/artificial-intelligence (1).png", layout="wide", initial_sidebar_state="expanded", menu_items=None)
     # Mengatur warna latar belakang menjadi putih
     page_bg_img = '''
     <style>
