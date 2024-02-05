@@ -266,7 +266,6 @@ def main():
         )
 
         # Menampilkan rekomendasi dalam bentuk tabel
-        st.markdown("nama pelatihan")
         st.table(pd.DataFrame(recommendations))
 
         
