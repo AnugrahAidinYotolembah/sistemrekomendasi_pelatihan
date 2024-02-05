@@ -266,7 +266,6 @@ def main():
         )
 
         # Menampilkan rekomendasi dalam bentuk tabel
-        df["training_name"] = "nama pelatihan"
         st.table(pd.DataFrame(recommendations))
 
         
