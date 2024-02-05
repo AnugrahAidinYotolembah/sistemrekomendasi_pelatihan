@@ -266,7 +266,8 @@ def main():
         )
 
         # Menampilkan rekomendasi dalam bentuk tabel
-        st.table(pd.DataFrame(recommendations))
+        df_renamed = data.rename(columns={'training_name': 'nama pelatihan'})
+        st.table(pd.DataFrame(df_renamed))
 
         
 
