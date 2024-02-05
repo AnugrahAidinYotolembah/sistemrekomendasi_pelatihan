@@ -266,6 +266,11 @@ def main():
         )
 
         # Menampilkan rekomendasi dalam bentuk tabel
+        st.sidebar.markdown("**Training Name**")
+        
+        for i in training_data:
+            st.sidebar.markdown(f"- {i+1}. {training_data[i]}")
+       
         st.table(pd.DataFrame(recommendations))
 
         
